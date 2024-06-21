@@ -6,7 +6,10 @@
 
 :root{
   font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
 }
+
+
 
 body{
   color: rgb(223, 228, 221);
@@ -43,6 +46,8 @@ nav ul{
   list-style: none;
   padding-right: 2rem;
   padding-top: 0.3rem;
+  padding: 1.2rem;
+  background-color: white;
 }
 
 ul li a{
@@ -66,12 +71,13 @@ h2,span{
   margin-top: 1.5rem;
 }
 
-p{
+main p{
   display: flex;
   font-size: clamp(1.5rem,1vh + 1rem, 3.1rem);
   line-height: clamp(1.5rem, 2.4rem,3.1rem);
   margin-top: 1.5rem;
   color: rgb(196, 190, 190);
+  margin-bottom: 1.7rem;
 }
 
 #whats{
@@ -80,4 +86,20 @@ p{
   right: 0.5rem;
   max-width: 2.5rem;
   cursor: pointer;
+}
+
+footer p{
+  text-align: center;
+  padding: 1.6rem;
+  font-weight: 600;
+  background-color: white;
+}
+
+footer a{
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+}
+
+footer a:hover{
+  color: rgb(26, 21, 21);;
 }
