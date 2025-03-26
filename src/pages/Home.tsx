@@ -30,18 +30,19 @@ export function Home() {
           <div
             id="menu"
             aria-label="Abrir menu"
-            className="w-20 h-10 cursor-pointer flex flex-col justify-evenly items-center z-20 relative"
+            className="w-20 h-20 cursor-pointer flex flex-col justify-evenly items-center z-20 relative"
             onClick={toggleMenu}
           >
-          <div className="flex flex-col gap-1.5 cursor-pointer z-20 justify-center items-center " onClick={() => setIsNavOpen(!isNavOpen)}>
-            <div className={`h-[4px] w-9 bg-black rounded transition-all duration-300 ease-in-out ${isNavOpen ? "rotate-45 absolute translate-y-[8.5px]" : ""}`}></div>
-            <div className={`h-[4px] w-9 bg-black rounded transition-all duration-300 ease-in-out ${isNavOpen ? "hidden" : ""}`}></div>
-            <div className={`h-[4px] w-9 bg-black rounded transition-all duration-300 ease-in-out ${isNavOpen ? "-rotate-45 absolute -translate-y-[8.5px]" : ""}`}></div>
-          </div>
+          <label>
+          <input type="checkbox" className="peer appearance-none sr-only" defaultChecked={false} checked={isNavOpen}
+          onChange={(e) => setIsNavOpen(!e.target.checked)}
+          />
+          <div className="relative w-8 h-1 rounded-full peer-checked:bg-transparent bg-black cursor-pointer after:absolute after:-top-2.5 after:left-0 after:w-8 after:h-1 after:bg-black after:rounded-full before:absolute before:top-2.5 before:w-8 before:h-1 before:bg-black before:rounded-full peer-checked:after:top-1/2 peer-checked:after:-translate-y-1/2 peer-checked:after:rotate-45 peer-checked:before:top-1/2 peer-checked:before:-translate-y-1/2 peer-checked:before:-rotate-45"></div>
+        </label>
           </div>
           {/* Menu de Navegação */}
           <nav
-            className={`fixed top-28 right-10 w-auto h-auto bg-green-300 flex flex-col items-center p-4 rounded-lg transition-all duration-500 ease-in-out shadow-[0_1px_15px_1px_black] ${
+            className={`fixed top-28 z-10 right-10 w-auto h-auto bg-green-300 flex flex-col items-center p-4 rounded-lg transition-all duration-500 ease-in-out shadow-[0_1px_15px_1px_black] ${
               isNavOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
             }`}
           >
@@ -53,7 +54,7 @@ export function Home() {
             </ul>
           </nav>
         </header>
-        <div className=" absolute bottom-[30px] mx-6 flex flex-col items-center gap-6  ">
+        <div className=" absolute top-[330px] mx-6 flex flex-col items-center gap-6  ">
           
           <h1 className="text-7xl font-bold">Seu Carro, Como Novo!</h1>
       
@@ -127,26 +128,7 @@ export function Home() {
 
       </section>
           
-      <BulletList 
-        title="Nossos Serviços"
-        items={[
-          {          
-            title: "Escolha o Serviço Ideal para o Seu Veículo",
-            description:
-              "Visite nossa página ou entre em contato conosco diretamente para conhecer todos os serviços que oferecemos, como polimento, limpeza interna/externa ou higienização de ar-condicionado",
-          },
-          {       
-            title: "Agendamento Simples e Rápido",
-            description:
-              "Assim que escolher o serviço desejado, você pode agendar de forma fácil, preenchendo o formulário no site ou fale conosco diretamente pelo whatsapp.",
-          },
-          {
-            title: "Serviço Realizado com Excelência",
-            description:
-              "Nossos profissionais qualificados realizarão o serviço com máxima qualidade e atenção aos detalhes, garantindo sua total satisfação.",
-          },
-        ]}
-      />
+      <BulletList/>
 
     </div>
   );
