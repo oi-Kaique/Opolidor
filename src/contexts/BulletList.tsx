@@ -1,8 +1,3 @@
-// Tipos
-interface BulletItem {
-  title: string
-  description: string
-}
 // Componente BulletList
 export function BulletList() {
   return (
