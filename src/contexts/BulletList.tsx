@@ -3,13 +3,6 @@ interface BulletItem {
   title: string
   description: string
 }
-
-interface BulletListProps {
-  title: string
-  items: BulletItem[]
-  className?: string
-}
-
 // Componente BulletList
 export function BulletList() {
   return (
