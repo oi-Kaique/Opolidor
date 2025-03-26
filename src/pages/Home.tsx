@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import { Button } from "../componet/Button";
-import { BulletList } from "../context/BulletList";
+import { Button } from "../components/Button";
+import { BulletList } from "../contexts/BulletList";
 
 import ImageHero from "../assets/hero.svg";
 import ImageLogo from "../assets/logo.svg";
@@ -87,7 +87,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="h-screen px-[24px] flex flex-col gap-[24px]">
+      <section className="h-full px-6 pb-3 flex flex-col gap-6">
         <div>
           <h2 className="text-bold text-5xl mt-10 mb-[16px]">
             Sobre nós
@@ -123,11 +123,10 @@ export function Home() {
         </div>
 
         <Button>Agende seu serviço agora !</Button>
-
-             {/* Logo  <img src={ImageGroup} alt="ImageGroup" />*/}
+        <img src={ImageGroup} alt="ImageGroup" />
 
       </section>
-
+          
       <BulletList 
         title="Nossos Serviços"
         items={[
@@ -148,6 +147,7 @@ export function Home() {
           },
         ]}
       />
+
     </div>
   );
 }
