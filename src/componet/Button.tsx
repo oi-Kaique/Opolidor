@@ -4,7 +4,7 @@ type Props = React.ComponentProps<"button"> & {
 
 const variants = {
   button: {
-    base: "py-[12px] px-[16px] rounded-md font-bold text-white bg-[#00DF82] cursor-pointer hover:bg-[#00DF82]/80",
+    base: "py-[12px] px-[16px] rounded-md font-bold text-black bg-[#00DF82] cursor-pointer hover:bg-[#00DF82]/80",
   }
 }
 
