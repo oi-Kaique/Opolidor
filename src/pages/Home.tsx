@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { Button } from "../components/Button";
 import { BulletList } from "../contexts/BulletList";
+import { ServicesProducts } from "../contexts/ServicesProducts";
 
 import ImageHero from "../assets/hero.svg";
 import ImageLogo from "../assets/logo.svg";
@@ -82,7 +83,7 @@ export function Home() {
             </div>
 
           <div className="flex gap-4">
-            <Button className="">Agende um horário</Button>
+            <Button>Agende um horário</Button>
             <button className="bg-transparent border-2 border-[#042222] px-[16px] py-[12px] font-bold rounded-md text-[#042222] cursor-pointer scale-1">Saiba mais</button>
           </div>
         </div>
@@ -129,7 +130,7 @@ export function Home() {
       </section>
           
       <BulletList/>
-
+      <ServicesProducts/>
     </div>
   );
 }
