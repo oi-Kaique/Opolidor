@@ -90,7 +90,7 @@ export function Home() {
 
       <section className="h-full px-6 pb-3 flex flex-col gap-6">
         <div>
-          <h2 className="text-bold text-5xl mt-10 mb-[16px]">
+          <h2 className="text-bold text-5xl mt-30 mb-[16px]">
             Sobre nós
           </h2>
           <p className="mb-[20px] text-justify">
