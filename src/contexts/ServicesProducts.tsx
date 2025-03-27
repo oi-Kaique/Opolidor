@@ -1,6 +1,6 @@
 import ImageCleaning from "../assets/Cleaning.svg";
 import ImagePolishing from "../assets/polishing.svg";
-import ImageCarWash from "../assets/carwash.svg";
+import ImageCarWash from "../assets/CarWash.svg";
 
 import { Button } from "../components/Button";
 
