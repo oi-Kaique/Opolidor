@@ -1,4 +1,4 @@
-import ImageCleaning from "../assets/cleaning.svg";
+import ImageCleaning from "../assets/Cleaning.svg";
 import ImagePolishing from "../assets/polishing.svg";
 import ImageCarWash from "../assets/carwash.svg";
 
