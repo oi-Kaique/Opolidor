@@ -58,7 +58,7 @@ export function Home() {
           </div>
           {/* Menu de Navegação */}
           <nav
-            className={`fixed top-28 z-10 right-10 w-auto h-auto bg-green-300 flex flex-col items-center p-4 rounded-lg transition-all duration-500 ease-in-out shadow-[0_1px_15px_1px_black] ${
+            className={`fixed top-28 z-10 right-10 w-auto h-auto bg-green-300 flex flex-col items-center p-4 rounded-lg transition-all rot duration-500 ease-in-out shadow-[0_1px_15px_1px_black] ${
               isNavOpen
                 ? "opacity-100 pointer-events-auto"
                 : "opacity-0 pointer-events-none"
@@ -161,7 +161,7 @@ export function Home() {
       <h2 className="font-bold text-2xl flex items-center justify-center! pb-2.5">
         Agende agora!
       </h2>
-      <p className="text-center text-sm px-5">
+      <p className="text-center text-sm px-5 pb-4">
         Não perca tempo em filas ou com longas esperas. Agende de onde estiver,
         no seu tempo, com total flexibilidade.
       </p>
