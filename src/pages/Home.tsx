@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "../components/Button";
 import { BulletList } from "../contexts/BulletList";
 import { ServicesProducts } from "../contexts/ServicesProducts";
+import { Footer } from "../contexts/Footer";
 
 import ImageHero from "../assets/hero.svg";
 import ImageLogo from "../assets/logo.svg";
@@ -21,7 +22,7 @@ export function Home() {
   };
 
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <section
         className="h-screen w-screen bg-cover bg-center bg-no-repeat bg-fixed relative"
         style={{ backgroundImage: `url(${ImageHero})` }}
@@ -64,9 +65,6 @@ export function Home() {
             }`}
           >
             <ul className="flex flex-col items-center gap-3">
-              <li className="cursor-pointer w-full p-2 text-black font-semibold hover:text-white">
-                Inicio
-              </li>
               <li className="cursor-pointer w-full p-2 text-black font-semibold hover:text-white">
                 Sobre nós
               </li>
@@ -163,7 +161,7 @@ export function Home() {
       <h2 className="font-bold text-2xl flex items-center justify-center! pb-2.5">
         Agende agora!
       </h2>
-      <p className="text-center text-sm pb-1.5">
+      <p className="text-center text-sm px-5">
         Não perca tempo em filas ou com longas esperas. Agende de onde estiver,
         no seu tempo, com total flexibilidade.
       </p>
@@ -172,6 +170,8 @@ export function Home() {
           Agende diretamente via WhatsApp <img src={Whatsap} alt="LogoWhats" />
         </Button>
       </div>
+
+      <Footer />
     </div>
   );
 }

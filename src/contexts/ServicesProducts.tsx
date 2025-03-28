@@ -10,7 +10,7 @@ export function ServicesProducts(){
       <h1 className="text-4xl font-semibold pt-2.5 pb-3">Serviços e produtos</h1>
 
       <div className="relative mb-6">
-        <img src={ImageCleaning} alt="Cleaning" className="w-120 hover:scale-1.1" />
+        <img src={ImageCleaning} alt="Cleaning" className="w-120 " />
         <div className="absolute bottom-4 left-4 flex flex-col items-start">
           <h2 className="text-white text-2xl font-semibold mb-2">Limpeza Completa</h2>
           <Button>Solicitar serviço</Button>
