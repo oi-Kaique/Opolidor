@@ -4,7 +4,7 @@ import Whatsapp from "../assets/WhatsappLogo.svg";
 
 export function Footer() {
   return (
-    <footer className="bg-[#03624C] text-white py-4">
+    <footer className="bg-[#03624C] text-white py-4 w-full">
       <div className="container mx-auto flex px-5 items-center justify-center">
         <div className="flex items-center w-full justify-between">
           <img src={ImageLogo} alt="Logo" className="h-12 mr-4" />

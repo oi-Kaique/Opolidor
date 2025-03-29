@@ -2,7 +2,7 @@
 import { Button } from "../components/Button";
 export function BulletList() {
   return (
-    <div className="px-4 xl:px-0 bg-[#03624C] rounded py-4 space-y-8">
+    <div className="px-4 bg-[#03624C] rounded py-4 space-y-8 xl:px-[250px] xl:py-[50px]">
       <h2 className="font-bold text-6xl text-white text-center">Como Funciona</h2>
       <ul>
         <li className="relative h-full after:absolute after:top-0 after:w-0.5 after:h-full after:bg-white before:absolute before:z-10 before:-left-1 before:top-1/2 before:-translate-y-1/2 before:bg-white before:size-3 before:rounded-full">

@@ -6,30 +6,32 @@ import { Button } from "../components/Button";
 
 export function ServicesProducts(){
   return (
-    <div className=" flex flex-col items-center justify-center">
+    <div id="product" className=" flex flex-col items-center justify-center mt-[50px]">
       <h1 className="text-4xl font-semibold pt-2.5 pb-3">Serviços e produtos</h1>
 
-      <div className="relative mb-6">
-        <img src={ImageCleaning} alt="Cleaning" className="w-120 " />
-        <div className="absolute bottom-4 left-4 flex flex-col items-start">
-          <h2 className="text-white text-2xl font-semibold mb-2">Limpeza Completa</h2>
-          <Button>Solicitar serviço</Button>
+      <div className="xl:flex xl:h-[502px] gap-6">
+        <div className="relative mb-6 ">
+          <img src={ImageCleaning} alt="Cleaning" className="w-120 xl:h-full xl:w-full" />
+          <div className="absolute bottom-4 left-4 flex flex-col items-start">
+            <h2 className="text-white text-2xl font-semibold mb-2">Limpeza Completa</h2>
+            <Button>Solicitar serviço</Button>
+          </div>
         </div>
-      </div>
-
-      <div className="relative mb-6">
-        <img src={ImagePolishing} alt="Polishing" className="w-120" />
-        <div className="absolute bottom-4 left-4 flex flex-col items-start">
-          <h2 className="text-white text-2xl font-semibold mb-2">Polimento</h2>
-          <Button>Solicitar serviço</Button>
-        </div>
-      </div>
-
-      <div className="relative mb-6">
-        <img src={ImageCarWash} alt="CarWash" className="w-120" />
-        <div className="absolute bottom-4 left-4 flex flex-col items-start">
-          <h2 className="text-white text-2xl font-semibold mb-2">Lava a Jato</h2>
-          <Button>Solicitar serviço</Button>
+        <div>
+          <div className="relative mb-6">
+            <img src={ImagePolishing} alt="Polishing" className="w-120" />
+            <div className="absolute bottom-4 left-4 flex flex-col items-start">
+              <h2 className="text-white text-2xl font-semibold mb-2">Polimento</h2>
+              <Button>Solicitar serviço</Button>
+            </div>
+          </div>
+          <div className="relative mb-6">
+            <img src={ImageCarWash} alt="CarWash" className="w-120" />
+            <div className="absolute bottom-4 left-4 flex flex-col items-start">
+              <h2 className="text-white text-2xl font-semibold mb-2">Lava a Jato</h2>
+              <Button>Solicitar serviço</Button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
