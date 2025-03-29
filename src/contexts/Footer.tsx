@@ -12,7 +12,7 @@ export function Footer() {
           
           <div className="flex gap-4">
             <a
-              href="https://www.instagram.com/limpeza.e.organizacao/"
+              href="https://www.instagram.com/opolidoresteticajacobina/"
               target="_blank"
               rel="noopener noreferrer"
             >

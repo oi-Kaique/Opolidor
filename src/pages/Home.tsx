@@ -42,9 +42,21 @@ export function Home() {
             {/* Menu de navegação Desktop*/}
             <nav className="hidden lg:block">
               <ul className="flex gap-10">
-                <li><a className="font-bold" href="#on">Sobre nós</a></li>
-                <li><a className="font-bold" href="#product">Produtos</a></li>
-                <li><a className="font-bold" href="#contact">Contatos</a></li>
+                <li>
+                  <a className="font-bold" href="#on">
+                    Sobre nós
+                  </a>
+                </li>
+                <li>
+                  <a className="font-bold" href="#product">
+                    Produtos
+                  </a>
+                </li>
+                <li>
+                  <a className="font-bold" href="#contact">
+                    Contatos
+                  </a>
+                </li>
               </ul>
             </nav>
             <Button className="hidden lg:block">Agendar um horário</Button>
@@ -88,7 +100,9 @@ export function Home() {
             </nav>
           </header>
           <div className="flex flex-col  absolute bottom-[5%] gap-6 lg:flex-row xl:gap-[300px] max-w-[1200px]">
-            <h1 className="text-7xl text-center font-bold xl:text-6xl ">Seu Carro, Como Novo!</h1>
+            <h1 className="text-7xl text-center font-bold xl:text-6xl ">
+              Seu Carro, Como Novo!
+            </h1>
             <div className="flex flex-col items-center gap-4 xl:w-[80%] xl:items-start">
               <p className="text-xl text-bold text-center xl:text-start">
                 Descubra a diferença que um polimento profissional pode fazer.
@@ -96,40 +110,48 @@ export function Home() {
                 limpeza e tratamento para veiculos.
               </p>
               <div className="flex gap-4">
-                <Button>Agende um horário</Button>
-                <button className="bg-transparent border-2 border-[#042222] px-[16px] py-[12px] font-bold rounded-md text-[#042222] cursor-pointer scale-1">
-                  Saiba mais
-                </button>
+                <a
+                  href={`https://wa.me/5511947986105?text=${encodeURIComponent(
+                    "Gostaria de agendar um horário"
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button>Solicitar serviço</Button>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
         <div className="w-full flex justify-around xl:justify-center xl:gap-[100px] mt-[60px]">
-            <div className="w-[110px] h-[90px] flex flex-col items-center justify-center border-none bg-[#03624c] rounded-md">
-              <img src={IconSpray} alt="imgSpray" />
-              <p className="text-xs font-medium text-center text-[#f1f7f7]">
-                Polimento
-              </p>
-            </div>
-
-            <div className="w-[110px] h-[90px] flex flex-col items-center justify-center border-none bg-[#03624c] rounded-md">
-              <img src={IconBroom} alt="imgBroom" />
-              <p className="text-xs text-center  text-[#f1f7f7] font-medium">
-                Limpeza interna/externa
-              </p>
-            </div>
-
-            <div className="w-[110px] h-[90px] flex flex-col items-center justify-center border-none bg-[#03624c] rounded-md">
-              <img src={IconWind} alt="imgWind" />
-              <p className="text-xs text-center text-[#f1f7f7] font-medium">
-                Limpeza de ar-condicionado
-              </p>
-            </div>
+          <div className="w-[110px] h-[90px] flex flex-col items-center justify-center border-none bg-[#03624c] rounded-md">
+            <img src={IconSpray} alt="imgSpray" />
+            <p className="text-xs font-medium text-center text-[#f1f7f7]">
+              Polimento
+            </p>
           </div>
+
+          <div className="w-[110px] h-[90px] flex flex-col items-center justify-center border-none bg-[#03624c] rounded-md">
+            <img src={IconBroom} alt="imgBroom" />
+            <p className="text-xs text-center  text-[#f1f7f7] font-medium">
+              Limpeza interna/externa
+            </p>
+          </div>
+
+          <div className="w-[110px] h-[90px] flex flex-col items-center justify-center border-none bg-[#03624c] rounded-md">
+            <img src={IconWind} alt="imgWind" />
+            <p className="text-xs text-center text-[#f1f7f7] font-medium">
+              Limpeza de ar-condicionado
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section id="on" className="h-full px-6 pb-3 flex flex-col gap-6 xl:flex-row xl:gap-[180px] xl:max-w-[1200px] mb-[100px]">
+      <section
+        id="on"
+        className="h-full px-6 pb-3 flex flex-col gap-6 xl:flex-row xl:gap-[180px] xl:max-w-[1200px] mb-[100px]"
+      >
         <div className="xl:flex flex-col gap-4">
           <h2 className="text-bold text-5xl mt-30 mb-[16px]">Sobre nós</h2>
           <p className="mb-[20px] text-justify">
@@ -160,7 +182,15 @@ export function Home() {
             descubra porque somos o Centro de Estética Automotiva preferido
             pelos amantes de carros!
           </p>
-         <Button>Agende seu serviço agora !</Button>
+          <a
+            href={`https://wa.me/5511947986105?text=${encodeURIComponent(
+              "Gostaria de solicitar os seus serviços "
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button>Solicitar serviço</Button>
+          </a>
         </div>
 
         <img src={ImageGroup} alt="ImageGroup" />
@@ -174,13 +204,23 @@ export function Home() {
           Agende agora!
         </h2>
         <p className="text-center text-sm px-5 pb-4">
-          Não perca tempo em filas ou com longas esperas. Agende de onde estiver,
-          no seu tempo, com total flexibilidade.
+          Não perca tempo em filas ou com longas esperas. Agende de onde
+          estiver, no seu tempo, com total flexibilidade.
         </p>
         <div className="flex justify-center w-full pb-4">
-          <Button className="flex items-center justify-center gap-1 hover:bg-green-400">
-            Agende diretamente via WhatsApp <img src={Whatsap} alt="LogoWhats" />
-          </Button>
+          <a
+            href={`https://wa.me/5511947986105?text=${encodeURIComponent(
+              "Olá, gostaria de agendar um serviço."
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <Button className="flex items-center justify-center gap-1 hover:bg-green-400 transition-colors">
+              Agende diretamente via WhatsApp{" "}
+              <img src={Whatsap} alt="LogoWhats" />
+            </Button>
+          </a>
         </div>
       </div>
 
