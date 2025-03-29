@@ -88,13 +88,19 @@ export function Home() {
             >
               <ul className="flex flex-col items-center gap-3">
                 <li className="cursor-pointer w-full p-2 text-black font-semibold hover:text-white">
+                  <a href="#on">
                   Sobre nós
+                  </a>
                 </li>
                 <li className="cursor-pointer w-full p-2 text-center text-black font-semibold hover:text-white">
+                  <a href="#product">
                   Produtos
+                  </a>
                 </li>
                 <li className="cursor-pointer w-full p-2 text-center text-black font-semibold hover:text-white">
+                  <a href="#contact">
                   Contatos
+                  </a>
                 </li>
               </ul>
             </nav>
