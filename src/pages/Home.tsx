@@ -59,12 +59,20 @@ export function Home() {
                 </li>
               </ul>
             </nav>
-            <Button className="hidden lg:block">Agendar um horário</Button>
+            <a
+              href={`https://wa.me/5511947986105?text=${encodeURIComponent(
+                "Gostaria de agendar um horário"
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="hidden lg:block lg:ml-6">Agendar um horário</Button>
+            </a>
             {/* Botão Hamburguer */}
             <div
               id="menu"
               aria-label="Abrir menu"
-              className="w-20 h-20 cursor-pointer flex flex-col justify-evenly items-center z-20 relative lg:hidden"
+              className="w-20 h-20 cursor-pointer flex flex-col justify-evenly items-center z-20 relative"
               onClick={toggleMenu}
             >
               <label>
@@ -75,7 +83,7 @@ export function Home() {
                   checked={isNavOpen}
                   onChange={(e) => setIsNavOpen(!e.target.checked)}
                 />
-                <div className="relative w-8 h-1 rounded-full peer-checked:bg-transparent bg-black cursor-pointer after:absolute after:-top-2.5 after:left-0 after:w-8 after:h-1 after:bg-black after:rounded-full before:absolute before:top-2.5 before:w-8 before:h-1 before:bg-black before:rounded-full peer-checked:after:top-1/2 peer-checked:after:-translate-y-1/2 peer-checked:after:rotate-45 peer-checked:before:top-1/2 peer-checked:before:-translate-y-1/2 peer-checked:before:-rotate-45"></div>
+                <div className="relative w-8 h-1 rounded-full peer-checked:bg-transparent bg-black cursor-pointer after:absolute after:-top-2.5 after:left-0 after:w-8 after:h-1 after:bg-black after:rounded-full before:absolute before:top-2.5 before:w-8 before:h-1 before:bg-black before:rounded-full peer-checked:after:top-1/2 peer-checked:after:-translate-y-1/2 peer-checked:after:rotate-45 peer-checked:before:top-1/2 peer-checked:before:-translate-y-1/2 peer-checked:before:-rotate-45 lg:hidden"></div>
               </label>
             </div>
             {/* Menu de Navegação */}
@@ -88,19 +96,13 @@ export function Home() {
             >
               <ul className="flex flex-col items-center gap-3">
                 <li className="cursor-pointer w-full p-2 text-black font-semibold hover:text-white">
-                  <a href="#on">
-                  Sobre nós
-                  </a>
+                  <a href="#on">Sobre nós</a>
                 </li>
                 <li className="cursor-pointer w-full p-2 text-center text-black font-semibold hover:text-white">
-                  <a href="#product">
-                  Produtos
-                  </a>
+                  <a href="#product">Produtos</a>
                 </li>
                 <li className="cursor-pointer w-full p-2 text-center text-black font-semibold hover:text-white">
-                  <a href="#contact">
-                  Contatos
-                  </a>
+                  <a href="#contact">Contatos</a>
                 </li>
               </ul>
             </nav>
