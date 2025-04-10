@@ -165,19 +165,19 @@ export function Home() {
           <p className="mb-[20px] text-justify">
             No Centro de Estética Automotiva, cada carro que passa por nossas
             mãos carrega uma história, e nossa missão é fazer com que essa
-            história brilhe. Não estamos aqui apenas para limpar e polir;
+            história brilhe. Não estamos aqui apenas para limpar e polir,
             estamos aqui para celebrar a paixão por veículos impecáveis,
             transformar cada detalhe e devolver a cada automóvel o respeito que
             ele merece. <br /> <br />
             Com mais de uma década de experiência no mercado, nosso amor por
             carros nos impulsiona a superar expectativas. Cada membro de nossa
-            equipe é mais do que um profissional; são verdadeiros entusiastas,
+            equipe é mais do que um profissional, são verdadeiros entusiastas,
             comprometidos em elevar a estética automotiva a um nível de
             excelência que só é possível com dedicação, conhecimento e, acima de
             tudo, paixão. Quando entregamos um veículo, entregamos mais do que
-            um serviço — entregamos uma experiência de confiança, excelência e
+            um serviço  entregamos uma experiência de confiança, excelência e
             satisfação. Esses são os pilares que nos guiam em cada serviço que
-            realizamos. Porque, para nós, não se trata apenas de carros;
+            realizamos. Porque, para nós, não se trata apenas de carros,
             trata-se de fazer o seu carro brilhar tanto quanto o dia em que você
             o viu pela primeira vez.
           </p>

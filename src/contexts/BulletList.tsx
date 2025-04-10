@@ -26,7 +26,7 @@ export function BulletList() {
             </strong>
             <p className="text-zinc-200">
               Assim que escolher o serviço desejado, você pode agendar de forma
-              fácil, preenchendo o formulário no site ou fale conosco
+              fácil, fale conosco
               diretamente pelo whatsapp.
             </p>
           </div>
