@@ -26,7 +26,7 @@ export function ServicesProducts() {
               Limpeza Completa
             </h2>
             <a
-              href={`https://wa.me/5511947986105?text=${encodeURIComponent(
+              href={`https://wa.me/5574981079263?text=${encodeURIComponent(
                 "Gostaria de solicitar o serviço de limpeza completa"
               )}`}
               target="_blank"
@@ -44,7 +44,7 @@ export function ServicesProducts() {
                 Polimento
               </h2>
               <a
-                href={`https://wa.me/5511947986105?text=${encodeURIComponent(
+                href={`https://wa.me/5574981079263?text=${encodeURIComponent(
                   "Gostaria de solicitar o serviço de polimento"
                 )}`}
                 target="_blank"
@@ -61,7 +61,7 @@ export function ServicesProducts() {
                 Lava a Jato
               </h2>
               <a
-                href={`https://wa.me/5511947986105?text=${encodeURIComponent(
+                href={`https://wa.me/5574981079263?text=${encodeURIComponent(
                   "Gostaria de solicitar o serviço de lava a jato"
                 )}`}
                 target="_blank"

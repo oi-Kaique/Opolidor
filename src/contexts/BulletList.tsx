@@ -92,7 +92,7 @@ export function BulletList() {
       </h3>
       <div className="flex justify-center">
         <a
-          href={`https://wa.me/5511947986105?text=${encodeURIComponent(
+          href={`https://wa.me/5574981079263?text=${encodeURIComponent(
             "Gostaria de fazer um agendamento de limpeza automotiva. Poderia me ajudar?"
           )}`}
           target="_blank"

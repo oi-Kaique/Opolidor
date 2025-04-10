@@ -19,7 +19,7 @@ export function Footer() {
               <img src={IconInstagram} alt="Instagram" className="h-6 " />
             </a>
             <a
-              href="https://wa.me/5511987654321"
+              href="https://wa.me/5574981079263"
               target="_blank"
               rel="noopener noreferrer"
             >

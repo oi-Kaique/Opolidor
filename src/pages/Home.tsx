@@ -60,7 +60,7 @@ export function Home() {
               </ul>
             </nav>
             <a
-              href={`https://wa.me/5511947986105?text=${encodeURIComponent(
+              href={`https://wa.me/5574981079263?text=${encodeURIComponent(
                 "Gostaria de agendar um horário"
               )}`}
               target="_blank"
@@ -119,7 +119,7 @@ export function Home() {
               </p>
               <div className="flex gap-4">
                 <a
-                  href={`https://wa.me/5511947986105?text=${encodeURIComponent(
+                  href={`https://wa.me/5574981079263?text=${encodeURIComponent(
                     "Gostaria de agendar um horário"
                   )}`}
                   target="_blank"
@@ -191,7 +191,7 @@ export function Home() {
             pelos amantes de carros!
           </p>
           <a
-            href={`https://wa.me/5511947986105?text=${encodeURIComponent(
+            href={`https://wa.me/5574981079263?text=${encodeURIComponent(
               "Gostaria de solicitar os seus serviços "
             )}`}
             target="_blank"
@@ -217,7 +217,7 @@ export function Home() {
         </p>
         <div className="flex justify-center w-full pb-4">
           <a
-            href={`https://wa.me/5511947986105?text=${encodeURIComponent(
+            href={`https://wa.me/5574981079263?text=${encodeURIComponent(
               "Olá, gostaria de agendar um serviço."
             )}`}
             target="_blank"
